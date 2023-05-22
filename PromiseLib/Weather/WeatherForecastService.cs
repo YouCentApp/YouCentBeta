@@ -1,4 +1,4 @@
-﻿namespace BlazorApp.Data;
+﻿namespace PromiseLib.Weather;
 
 public class WeatherForecastService
 {
