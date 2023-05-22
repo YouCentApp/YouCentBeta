@@ -5,9 +5,15 @@
              Title="WebTest"
              xmlns:local="clr-namespace:BlazorApp"
              Shell.NavBarIsVisible="False">
-        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
-            <BlazorWebView.RootComponents>
-                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
-            </BlazorWebView.RootComponents>
-        </BlazorWebView>
+    <ScrollView>
+        <VerticalStackLayout>
+            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+                <BlazorWebView.RootComponents>
+                    <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+                </BlazorWebView.RootComponents>
+            </BlazorWebView>
+            <Label Text="Hello from Native MAUI render ))"></Label>
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>
