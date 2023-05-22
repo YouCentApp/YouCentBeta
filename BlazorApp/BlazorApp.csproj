@@ -54,5 +54,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\PromiseLib\PromiseLib.csproj" />
+      <ProjectReference Include="..\BlazorLib\BlazorLib.csproj" />
     </ItemGroup>
 </Project>
