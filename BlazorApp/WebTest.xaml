@@ -4,15 +4,16 @@
              x:Class="BlazorApp.WebTest"
              Title="WebTest"
              xmlns:local="clr-namespace:BlazorApp"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              Shell.NavBarIsVisible="False">
     <ScrollView>
         <VerticalStackLayout>
-            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" HeightRequest="500">
                 <BlazorWebView.RootComponents>
                     <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
                 </BlazorWebView.RootComponents>
             </BlazorWebView>
-            <Label Text="Hello from Native MAUI render ))"></Label>
+            <Label HeightRequest="50" MaximumHeightRequest="100" Text="Hello from Native MAUI render ))"></Label>
         </VerticalStackLayout>
     </ScrollView>
 
