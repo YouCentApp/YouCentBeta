@@ -1,12 +1,12 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 @font-face {
-    font-family: MyNunito;
-    src: url(Nunito.ttf);
+    font-family: YouCentNunito;
+    src: url('../fonts/nunito.ttf');
 }
 
 html, body {
-    font-family: 'MyNunito', Helvetica, Arial, sans-serif;
+    font-family: 'YouCentNunito', Helvetica, Arial, sans-serif;
 }
 
 h1:focus {
