@@ -2,6 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 780px;
+    min-height: 480px;
+    margin: auto;
+    background: #D3D800;
 }
 
 main {
@@ -36,7 +40,10 @@ main {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+
+
+
+/*@media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;
     }
@@ -48,9 +55,9 @@ main {
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
     }
-}
+}*/
 
-@media (min-width: 641px) {
+/*@media (min-width: 641px) {
     .page {
         flex-direction: row;
     }
@@ -79,4 +86,4 @@ main {
         padding-right: 1.5rem !important;
     }
 }
-
+*/
