@@ -8,6 +8,11 @@
 html, body {
     font-family: 'YouCentNunito', Helvetica, Arial, sans-serif;
     background-color: #000;
+    height: 100%;
+}
+
+div#app {
+    height: 100%;
 }
 
 h1:focus {
