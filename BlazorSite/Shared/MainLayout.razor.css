@@ -1,11 +1,12 @@
 ﻿.page {
+    color: white;
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 780px;
     min-height: 100vh;
     margin: auto;
-    background: #D3D800;
+    background: #95C11F;
 }
 
 main {
@@ -13,12 +14,12 @@ main {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: #3AAA35;
 }
 
 .top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+    background-color: #95C11F;
+    border-bottom: 1px solid #3AAA35;
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
