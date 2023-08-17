@@ -1,15 +1,18 @@
 ﻿.navbar-toggler {
-    background-color: black;
+    background-color: #3AAA35;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    border-color: rgba(255,255,255,0.8);
 }
 
 .top-row {
     color: white;
-    height: 3.5rem;
+    height: 4rem;
     background-color: #3AAA35;
 }
 
 .navbar-brand {
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 .oi {
@@ -55,20 +58,4 @@
 
 
 
-/*@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .collapse {*/
-        /* Never collapse the sidebar for wide screens */
-        /*display: block;
-    }
-    
-    .nav-scrollable {*/
-        /* Allow sidebar to scroll for tall menus */
-        /*height: calc(100vh - 3.5rem);
-        overflow-y: auto;
-    }
-}*/
 

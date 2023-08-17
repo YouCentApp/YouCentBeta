@@ -30,20 +30,20 @@ a, .btn-link {
 }
 
     .btn-primary:hover {
-        color: #3AAA35;
-        background-color: #D3D800;
+        color: white;
+        background-color: #95C11F;
         border-color: white;
     }
 
     .btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:active {
-        color: #3AAA35;
-        background-color: #D3D800;
+        color: white;
+        background-color: #95C11F;
         border-color: white;
     }
 
-    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-        box-shadow: 0 0 0 0.25rem #3AAA35;
-    }
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.8);
+}
 
 .content {
     padding-top: 1.1rem;
