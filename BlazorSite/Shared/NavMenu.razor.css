@@ -5,6 +5,8 @@
     border-color: rgba(255,255,255,0.8);
 }
 
+
+
 .top-row {
     color: white;
     height: 4rem;
@@ -15,6 +17,20 @@
     margin: 0;
     padding: 0;
 }
+
+    .navbar-brand .brand-name {
+        display: inline-block;
+        margin-top: 5%;
+        font-weight: 700;
+    }
+
+    .navbar-brand .brand-logo {
+        display: inline-block;
+        width: 16%;
+        margin-bottom: 6%;
+        margin-right: 3%;
+    }
+
 
 .oi {
     width: 2rem;
