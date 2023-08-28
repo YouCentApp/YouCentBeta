@@ -4,9 +4,9 @@
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
+        <PageTitle>No page found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, this page does not exist.</p>
+            <p class="error-404" role="alert">Sorry, looks like this page does not exist. Please try again.</p>
         </LayoutView>
     </NotFound>
 </Router>

@@ -10,5 +10,10 @@
     private void IncrementCount()
     {
         currentCount++;
+
+        if (currentCount > 3)
+    {
+        throw new InvalidOperationException("Current count is too big!");
+    }
     }
 }
