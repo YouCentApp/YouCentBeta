@@ -1,23 +1,11 @@
 ﻿.page {
-    color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 780px;
-    min-height: 100vh;
-    margin: auto;
-    background: #95C11F;
+    margin: 0;
+    color: var(--neutral-base-color);
+    background-color: var(--neutral-fill-layer-rest);
 }
 
-main {
-    flex: 1;
-}
 
-.topbar {
-    background: #3AAA35;
-    margin-top: -0.2rem;
-    padding-bottom: 0.4rem;
-}
+
 
 
 

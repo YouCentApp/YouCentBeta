@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.5" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="2.4.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,4 +18,10 @@
   <ItemGroup>
     <ProjectReference Include="..\PromiseLib\PromiseLib.csproj" />
   </ItemGroup>
+
+  <Target Name="DisableAnalyzers" BeforeTargets="CoreCompile">
+    <ItemGroup>
+      <Analyzer Remove="@(Analyzer)" Condition="'%(Filename)' == 'Microsoft.Fast.Components.FluentUI.Configuration'" />
+    </ItemGroup>
+  </Target>    
 </Project>
