@@ -5,6 +5,7 @@
 
 body {
     --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
 }
 
 
