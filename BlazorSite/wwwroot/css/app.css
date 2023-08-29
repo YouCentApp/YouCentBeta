@@ -1,3 +1,22 @@
+@font-face {
+    font-family: YouCentNunito;
+    src: url('../fonts/nunito.ttf');
+}
+
+body {
+    --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
+}
+
+
+
+.error-404 {
+    margin: auto;
+    width: 70vw;
+    text-align: center;
+    padding: 5vw;
+}
+
+
 #blazor-error-ui {
     background: #3AAA35;
     bottom: 0;
@@ -65,25 +84,4 @@
     }
 
 
-
-
-/* YouCent CSS */
-
-
-@font-face {
-    font-family: YouCentNunito;
-    src: url('../fonts/nunito.ttf');
-}
-
-body {
-    --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
-    /* --accent-foreground-rest: white; */
-}
-
-.error-404 {
-    margin: auto;
-    width: 70vw;
-    text-align: center;
-    padding: 5vw;
-}
 
