@@ -3,9 +3,14 @@
     src: url('../fonts/nunito.ttf');
 }
 
+html {
+    height: 100%;
+}
+
 body {
     --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
+    height: 100%;
 }
 
 

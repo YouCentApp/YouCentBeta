@@ -1,13 +1,15 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-    </Found>
-    <NotFound>
-        <PageTitle>No page found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p class="error-404" role="alert">Sorry, looks like this page does not exist. Please try again.</p>
-        </LayoutView>
-    </NotFound>
-</Router>
+﻿<FluentDesignSystemProvider AccentBaseColor="#3AAA35" BaseLayerLuminance="0.10f" Style="height:100%;">
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>No page found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p class="error-404" role="alert">Sorry, looks like this page does not exist. Please try again.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</FluentDesignSystemProvider>
 
