@@ -1,5 +1,8 @@
 ﻿.page {
     margin: 0;
+    background-color: var(--neutral-fill-layer-rest);
+    color: var(--neutral-base-color);
+    height: 100%;
 }
 
 
