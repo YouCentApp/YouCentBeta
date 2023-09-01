@@ -11,6 +11,7 @@ body {
     --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
     height: 100%;
+    /* --neutral-fill-layer-rest: black; */
 }
 
 
@@ -86,7 +87,7 @@ body {
 
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading YouCent");
-        color: black;
+        color: #3AAA35;
     }
 
 

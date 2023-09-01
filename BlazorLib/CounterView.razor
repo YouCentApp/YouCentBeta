@@ -11,9 +11,10 @@
     {
         currentCount++;
 
-        if (currentCount > 3)
-    {
-        throw new InvalidOperationException("Current count is too big!");
-    }
+
+        if (currentCount > 10)
+        {
+            throw new InvalidOperationException("Current count is too big!");
+        }
     }
 }
