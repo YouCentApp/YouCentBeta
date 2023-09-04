@@ -12,21 +12,25 @@
     <FluentButton Appearance="@Appearance.Accent" @onclick="DimLights">Dim Lights</FluentButton>
 </div>
 
-
+<br>
+<br>
 <FluentCard>
-    <br><br>
+    <br><br />
     <p>Light Level = @(Math.Round(lightLevel, 2))</p>
+    <br><br>
 </FluentCard>
+<br>
+<br>
 
 <p>
     <br><br>
-    <FluentButton Appearance="@Appearance.Accent" @onclick="TurnDark">DARK</FluentButton> 
+    <FluentButton Appearance="@Appearance.Accent" @onclick="TurnDark">DARK</FluentButton>
     &nbsp;&nbsp;&nbsp;
     <FluentButton Appearance="@Appearance.Accent" @onclick="TurnLight">LIGHT</FluentButton>
 </p>
 
 @code {
-    
+
     [CascadingParameter]
     public App? App { get; set; }
 
@@ -45,11 +49,13 @@
 
     private void TurnDark()
     {
-        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, 0f);
+        lightLevel = 0f;
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel);
     }
 
     private void TurnLight()
     {
-        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, 1f);
+        lightLevel = 1f;
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel);
     }
 }
