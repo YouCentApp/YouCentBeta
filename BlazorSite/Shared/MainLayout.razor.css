@@ -1,7 +1,7 @@
 ﻿.page {
-    margin: 0;
+    margin: 5%;
+    color: var(--neutral-foreground-rest);
     background-color: var(--neutral-fill-layer-rest);
-    color: var(--neutral-base-color);
     height: 100%;
 }
 

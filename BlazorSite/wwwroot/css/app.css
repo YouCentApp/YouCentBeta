@@ -4,16 +4,22 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
-    --body-font: 'YouCentNunito', Helvetica, Arial, sans-serif;
+    --body-font:
+    'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
     height: 100%;
-    --neutral-fill-layer-rest: black;
+    background-color: black;
+    max-width: 768px;
+    margin: auto;
 }
 
+#app {
+    height: 100%;
+}
 
 .error-404 {
     margin: auto;
