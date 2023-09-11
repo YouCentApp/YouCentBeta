@@ -2,7 +2,7 @@
     padding: 5%;
     color: var(--neutral-foreground-rest);
     background-color: var(--neutral-fill-layer-rest);
-    height: 100%;
+    min-height: 100vh;
 }
 
 

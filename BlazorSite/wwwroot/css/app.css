@@ -3,22 +3,13 @@
     src: url('../fonts/nunito.ttf');
 }
 
-html {
-    min-height: 100vh;
-}
-
 body {
     --body-font:
     'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
-    height: 100%;
     background-color: black;
     max-width: 768px;
     margin: auto;
-}
-
-#app {
-    height: 100%;
 }
 
 .error-404 {
