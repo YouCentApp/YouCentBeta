@@ -2,13 +2,14 @@
 using Microsoft.Fast.Components.FluentUI;
 using Microsoft.Fast.Components.FluentUI.Utilities;
 
+namespace BlazorSite.Shared;
 
 public partial class NavMenu : FluentComponentBase
 {
     [Inject]
     private NavigationManager NavigationManager { get; set; } = default!;
 
-    private const string WIDTH_COLLAPSED_MENU = "40px";
+    private const string WIDTH_COLLAPSED_MENU = "0px";
     private readonly List<NavMenuLink> _links = new();
     private readonly List<NavMenuGroup> _groups = new();
     private string _prevHref = "/";
