@@ -5,7 +5,20 @@
     min-height: 100vh;
 }
 
+.brand-logo {
+    display: inline-block;
+    margin: 4px;
+    width: 36px;
+}
 
+.brand-name {
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 36px;
+}
 
 
 

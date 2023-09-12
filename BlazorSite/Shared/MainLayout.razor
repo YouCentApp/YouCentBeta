@@ -1,10 +1,20 @@
-﻿@inherits LayoutComponentBase
+﻿
+@inherits LayoutComponentBase
 
 
     
  <div class="page">
     <div class="topbar">
-        <NavMenu />
+        <a href=""><img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" /></a>
+
+        <a class="brand-name" href="">YouCent</a>
+
+    <NavMenu>
+        <NavMenuLink Text="Item 1" @onclick="OnClick" />
+        <NavMenuLink Text="Item 2" @onclick="OnClick" />
+        <NavMenuLink Text="Item 3" @onclick="OnClick" />
+        <NavMenuLink Text="Item 4" @onclick="OnClick" />
+    </NavMenu>
     </div>
 
     <main>
@@ -18,4 +28,19 @@
 
 
     
+@code
+{
 
+    void OnClick(MouseEventArgs e)
+    {
+        
+    }
+
+    protected override void OnAfterRender(bool firstRender) {
+        if (firstRender) 
+        {
+            
+        }
+        base.OnAfterRender(firstRender);
+    }
+}

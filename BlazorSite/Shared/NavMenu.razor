@@ -1,25 +1,20 @@
-﻿
-<a href=""><img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" /></a>
-
-<a class="brand-name" href="">YouCent</a>
-
-<p><br /></p>
-
+﻿@inherits FluentComponentBase
 <div>
-    <nav>
-        <div>
-            <a class="nav-link" href="">
-                Send Promises
-            </a>
-            <br />
-        </div>
-        <div class="">
-            <a class="nav-link" href="mart">
-                Promise Mart
-            </a>
-        </div>
-        <br />
-    </nav>
+    <CascadingValue Value="this" Name="NavMenu" IsFixed="true">
+        <CascadingValue Value="Expanded" Name="NavMenuExpanded">
+            <FluentTreeView Class="@ClassValue"
+                            Style="@StyleValue"
+                            OnSelectedChange="HandleSelectedChange">
+                @if (Collapsible) {
+                    <FluentButton Appearance="Appearance.Lightweight"
+                              Class="navmenu-main-button"
+                              @onclick="CollapsibleClickAsync"
+                              title="@Title">
+                        <FluentIcon Name="@(FluentIcons.Navigation)" Size="IconSize.Size20" />
+                    </FluentButton>
+                }
+                @ChildContent
+            </FluentTreeView>
+        </CascadingValue>
+    </CascadingValue>
 </div>
-
-<p><br /></p>
