@@ -6,20 +6,29 @@
 }
 
 .brand-logo {
-    display: inline-block;
-    margin: 4px;
+    margin-left: 10px;
     width: 36px;
 }
 
 .brand-name {
-    display: inline-block;
-    position: relative;
-    bottom: 8px;
     font-weight: 700;
     text-decoration: none;
     font-size: 36px;
+    margin-left: 10px;
 }
 
+.main-menu {
+    order: 1;
+}
 
-
-
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.brand {
+display: flex;
+justify-content: space-between;
+order: 2;
+}
+  

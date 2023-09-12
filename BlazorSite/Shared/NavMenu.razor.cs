@@ -10,6 +10,7 @@ public partial class NavMenu : FluentComponentBase
     private NavigationManager NavigationManager { get; set; } = default!;
 
     private const string WIDTH_COLLAPSED_MENU = "0px";
+    private const string HEIGHT_COLLAPSED_MENU = "0px";
     private readonly List<NavMenuLink> _links = new();
     private readonly List<NavMenuGroup> _groups = new();
     private string _prevHref = "/";
@@ -21,7 +22,9 @@ public partial class NavMenu : FluentComponentBase
 
     protected string? StyleValue => new StyleBuilder()
         .AddStyle("width", $"{Width}px", () => Expanded && Width.HasValue)
+        .AddStyle("height", "auto", () => Expanded && Width.HasValue)
         .AddStyle("width", WIDTH_COLLAPSED_MENU, () => !Expanded)
+        .AddStyle("height", HEIGHT_COLLAPSED_MENU, () => !Expanded)
         .AddStyle("min-width", WIDTH_COLLAPSED_MENU, () => !Expanded)
         .AddStyle(Style)
         .Build();
@@ -61,7 +64,7 @@ public partial class NavMenu : FluentComponentBase
     /// Gets or sets whether the menu is collapsed.
     /// </summary>
     [Parameter]
-    public bool Expanded { get; set; } = true;
+    public bool Expanded { get; set; } = false;
 
     /// <summary>
     /// Event callback for when the menu is collapsed status changed.
