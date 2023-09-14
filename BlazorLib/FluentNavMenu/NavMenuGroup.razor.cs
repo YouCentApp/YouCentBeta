@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Fast.Components.FluentUI;
 using Microsoft.Fast.Components.FluentUI.Utilities;
 
-namespace BlazorSite.Shared;
+namespace BlazorLib.FluentNavMenu;
 
 public partial class NavMenuGroup : FluentComponentBase
 {

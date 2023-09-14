@@ -7,8 +7,9 @@ body {
     --body-font:
     'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
-    background-color: black;
-    max-width: 768px;
+    background-color: #3a3a3a;
+    max-width: 850px;
+    min-width: 320px;
     margin: auto;
 }
 

@@ -1,5 +1,5 @@
 ﻿.page {
-    padding: 5%;
+    padding: 12px;
     color: var(--neutral-foreground-rest);
     background-color: var(--neutral-fill-layer-rest);
     min-height: 100vh;
@@ -20,6 +20,7 @@
 
 .main-menu {
     order: 1;
+    min-width: 100px;
 }
 
 .topbar {
@@ -33,3 +34,6 @@
     order: 2;
 }
   
+.content {
+    margin: 8px;
+}

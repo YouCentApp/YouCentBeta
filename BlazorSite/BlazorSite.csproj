@@ -41,7 +41,6 @@
     <Content Remove="wwwroot\img\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties/PublishProfiles/" />
     <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
