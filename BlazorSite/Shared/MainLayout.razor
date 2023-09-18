@@ -2,23 +2,24 @@
 @inject NavigationManager Navigation
 
 
+@namespace BlazorSite
     
  <div class="page">
     <div class="topbar">
         <div class="main-menu">
-            <NavMenu>
-                <NavMenuLink Text="PromiPay" @onclick="OnClickPay" />
-                <NavMenuLink Text="PromiMart" @onclick="OnClickMart" />
-                <NavMenuLink Text="Settings" @onclick="OnClick" />
-                <NavMenuLink Text="Help" @onclick="OnClick" />
-                <NavMenuLink Text="Our Team" @onclick="OnClick" />
-                <NavMenuLink Text="Our Misson" @onclick="OnClick" />
-                <NavMenuLink Text="Join Us!" @onclick="OnClick" />
+            <NavMenu @bind-Expanded="@expandedMenu">
+                <NavMenuLink Text="PromiPay" Href="/pay" />
+                <NavMenuLink Text="PromiMart" Href="/mart"/>
+                <NavMenuLink Text="Settings"  Href="/pay"/>
+                <NavMenuLink Text="Help" Href="/pay" />
+                <NavMenuLink Text="Our Team" Href="/pay" />
+                <NavMenuLink Text="Our Misson" Href="/" />
+                <NavMenuLink Text="Join Us!" Href="/mart" />
             </NavMenu>
         </div>
         <div class="brand">
-            <a href=""><img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" /></a>
-            <a class="brand-name" href="">YouCent</a>
+            <a href="/"><img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" /></a>
+            <a class="brand-name" href="/">YouCent</a>
         </div>
     </div>
 
@@ -36,26 +37,5 @@
 @code
 {
 
-    void OnClick(MouseEventArgs e)
-    {
-        
-    }
-
-    void OnClickPay(MouseEventArgs e)
-    {
-        
-    }
-
-    void OnClickMart(MouseEventArgs e)
-    {
-        Navigation.NavigateTo("/mart");
-    }
-
-    protected override void OnAfterRender(bool firstRender) {
-        if (firstRender) 
-        {
-            
-        }
-        base.OnAfterRender(firstRender);
-    }
+    bool expandedMenu = false;
 }

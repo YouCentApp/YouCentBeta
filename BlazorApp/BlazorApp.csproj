@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <!--<TargetFrameworks>net7.0-android;</TargetFrameworks>-->
@@ -75,10 +75,5 @@
       <ProjectReference Include="..\PromiseLib\PromiseLib.csproj" />
       <ProjectReference Include="..\BlazorLib\BlazorLib.csproj" />
     </ItemGroup>
-    <ItemGroup>
-      <None Remove="Resources\Fonts\nunito.ttf" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="Resources\Fonts\Nunito.ttf" />
-    </ItemGroup>
+
 </Project>
