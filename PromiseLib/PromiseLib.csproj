@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+   <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
+  </PropertyGroup>
+  
 </Project>

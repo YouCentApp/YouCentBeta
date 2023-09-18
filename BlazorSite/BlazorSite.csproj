@@ -31,6 +31,8 @@
     </ProjectReference>
   </ItemGroup>
 
-
-
+   <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
+  </PropertyGroup>
+  
 </Project>

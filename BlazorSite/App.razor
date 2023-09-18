@@ -1,5 +1,5 @@
 ﻿<CascadingValue Value="this">
-    <FluentDesignSystemProvider  NeutralBaseColor="#3AAA35" AccentBaseColor="#95C11F" BaseLayerLuminance="0f" Style="height:100%;">
+    <FluentDesignSystemProvider @ref="MainDesign" NeutralBaseColor="#3AAA35" AccentBaseColor="#95C11F" BaseLayerLuminance="0f" Style="height:100%;">
         <Router AppAssembly="@typeof(App).Assembly">
             <Found Context="routeData">
                 <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
@@ -14,9 +14,9 @@
     </FluentDesignSystemProvider>
 </CascadingValue>
 
-@* @ref="MainDesign" *@
 
-@* @code {
+
+@code {
 
     [Inject]
     public BaseLayerLuminance BaseLayerLuminance { get; set; } = default!;
@@ -25,4 +25,4 @@
 
 
     
-} *@
+}

@@ -24,4 +24,9 @@
       <Analyzer Remove="@(Analyzer)" Condition="'%(Filename)' == 'Microsoft.Fast.Components.FluentUI.Configuration'" />
     </ItemGroup>
   </Target>    
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
+  </PropertyGroup>
+
 </Project>
