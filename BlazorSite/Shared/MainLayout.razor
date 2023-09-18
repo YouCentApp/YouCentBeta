@@ -10,11 +10,11 @@
             <NavMenu @bind-Expanded="@expandedMenu">
                 <NavMenuLink Text="PromiPay" Href="/pay" />
                 <NavMenuLink Text="PromiMart" Href="/mart"/>
-                <NavMenuLink Text="Settings"  Href="/pay"/>
+                <NavMenuLink Text="Settings"  Href="/dash"/>
                 <NavMenuLink Text="Help" Href="/pay" />
-                <NavMenuLink Text="Our Team" Href="/pay" />
-                <NavMenuLink Text="Our Misson" Href="/" />
-                <NavMenuLink Text="Join Us!" Href="/mart" />
+                <NavMenuLink Text="Our Team" Href="/mart" />
+                <NavMenuLink Text="Our Misson" Href="/dash" />
+                <NavMenuLink Text="Join Us!" Href="/pay" />
             </NavMenu>
         </div>
         <div class="brand">
@@ -38,4 +38,9 @@
 {
 
     bool expandedMenu = false;
+
+    @* void OnMenuLinkClick(MouseEventArgs e)
+    {
+        
+    } *@
 }

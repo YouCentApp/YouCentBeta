@@ -1,10 +1,11 @@
 ﻿@page "/"
-<PageTitle>YouCent Dashboard</PageTitle>
+@inject NavigationManager NavManager
 
-<HelloView></HelloView>
+<h1>YouCent</h1>
 
-
-<FluentCard>
-  <h2>Hello FluentUI World!</h2>
-  <FluentButton Appearance="@Appearance.Accent">Click Me</FluentButton>
-</FluentCard>
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("/dash");
+    }
+}

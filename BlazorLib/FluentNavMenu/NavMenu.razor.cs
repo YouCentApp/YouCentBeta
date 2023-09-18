@@ -64,7 +64,7 @@ public partial class NavMenu : FluentComponentBase
     /// Gets or sets whether the menu is collapsed.
     /// </summary>
     [Parameter]
-    public bool Expanded { get; set; } = false;
+    public bool Expanded { get; set; } = true;
 
     /// <summary>
     /// Event callback for when the menu is collapsed status changed.
