@@ -96,7 +96,7 @@ public partial class NavMenuLink : FluentComponentBase
 
     internal void SetSelected(bool value)
     {
-        Selected = value;
+        //Selected = value;
     }
 
 
@@ -106,14 +106,14 @@ public partial class NavMenuLink : FluentComponentBase
 
         if (!string.IsNullOrEmpty(Href) && (new Uri(NavigationManager.Uri).LocalPath) == Href)
         {
-            Selected = true;
+            //Selected = true;
         }
     }
 
 
     internal void HandleIconClick()
     {
-        if (!Disabled)
-            Selected = true;
+        //if (!Disabled)
+            //Selected = true;
     }
 }

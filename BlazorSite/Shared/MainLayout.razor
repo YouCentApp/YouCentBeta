@@ -7,19 +7,19 @@
  <div class="page">
     <div class="topbar">
         <div class="main-menu">
-            <NavMenu @bind-Expanded="@expandedMenu">
-                <NavMenuLink Text="PromiPay" Href="/pay" />
+            <NavMenu  @bind-Expanded="@expandedMenu">
+                <NavMenuLink Text="PromiPay" Href="/dash" />
                 <NavMenuLink Text="PromiMart" Href="/mart"/>
                 <NavMenuLink Text="Settings"  Href="/dash"/>
-                <NavMenuLink Text="Help" Href="/pay" />
+                <NavMenuLink Text="Help" Href="/dash" />
                 <NavMenuLink Text="Our Team" Href="/mart" />
                 <NavMenuLink Text="Our Misson" Href="/dash" />
-                <NavMenuLink Text="Join Us!" Href="/pay" />
+                <NavMenuLink Text="Join Us!" Href="/dash" />
             </NavMenu>
         </div>
         <div class="brand">
-            <a href="/"><img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" /></a>
-            <a class="brand-name" href="/">YouCent</a>
+            <img @onclick="OnBrandClick" title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" />
+            <span @onclick="OnBrandClick" class="brand-name" href="/dash">YouCent</span>
         </div>
     </div>
 
@@ -38,9 +38,8 @@
 {
 
     bool expandedMenu = false;
-
-    @* void OnMenuLinkClick(MouseEventArgs e)
+    void OnBrandClick(MouseEventArgs e)
     {
-        
-    } *@
+        Navigation.NavigateTo("/dash");
+    }
 }
