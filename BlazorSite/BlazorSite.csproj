@@ -6,20 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup>
-	<PublishFluentIconAssets>true</PublishFluentIconAssets>
-	<FluentIconSizes>10,12,16,20,24,28,32,48</FluentIconSizes>
-	<FluentIconVariants>Filled,Regular</FluentIconVariants>
-	<PublishFluentEmojiAssets>true</PublishFluentEmojiAssets>
-	<FluentEmojiGroups>Activities,Animals_Nature,Flags,Food_Drink,Objects,People_Body,Smileys_Emotion,Symbols,Travel_Places</FluentEmojiGroups>
-	<FluentEmojiStyles>Color,Flat,HighContrast</FluentEmojiStyles>
-  </PropertyGroup>
+
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.5" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="2.4.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.11" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Emojis" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>

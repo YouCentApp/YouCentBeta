@@ -7,15 +7,15 @@
  <div class="page">
     <div class="topbar">
         <div class="main-menu">
-            <NavMenu  @bind-Expanded="@expandedMenu">
-                <NavMenuLink Text="PromiPay" Href="/dash" />
-                <NavMenuLink Text="PromiMart" Href="/mart"/>
-                <NavMenuLink Text="Settings"  Href="/dash"/>
-                <NavMenuLink Text="Help" Href="/dash" />
-                <NavMenuLink Text="Our Team" Href="/mart" />
-                <NavMenuLink Text="Our Misson" Href="/dash" />
-                <NavMenuLink Text="Join Us!" Href="/dash" />
-            </NavMenu>
+            <FluentNavMenu @bind-Expanded="@expandedMenu" Width="150" Collapsible="true">
+                <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Item 1" Href="/dash" />
+                <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Cloud())" Text="Item 2" Href="/mart" />
+                <FluentNavMenuGroup Text="Item 3" Icon="@(new Icons.Regular.Size24.EarthLeaf())" Href="/mart">
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.LeafOne())" Text="Item 3.1" Href="/mart" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.LeafTwo())" Text="Item 3.2" Href="/dash" />
+                </FluentNavMenuGroup> 
+                <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.CalendarAgenda())" Text="Item 4" Disabled="true" Href="https://microsoft.com" />
+            </FluentNavMenu>            
         </div>
         <div class="brand">
             <img @onclick="OnBrandClick" title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" />
