@@ -12,7 +12,7 @@
             "type": "blazorwasm",
             "request": "launch",
             "cwd": "${workspaceFolder}/BlazorSite",
-            "browser": "chrome",
+            "browser": "edge",
             "url": "https://localhost:7007"
         }
     ]

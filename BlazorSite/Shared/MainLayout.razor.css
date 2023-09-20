@@ -5,6 +5,7 @@
     min-height: 100vh;
 }
 
+
 .brand-logo {
     margin-left: 10px;
     width: 36px;
@@ -18,22 +19,8 @@
     margin-top: 10px;
 }
 
-.main-menu {
-    order: 1;
-    min-width: 100px;
-}
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-}
-  
-.brand {
-    display: flex;
-    justify-content: space-between;
-    order: 2;
-}
   
 .content {
     margin: 8px;
 }
+
