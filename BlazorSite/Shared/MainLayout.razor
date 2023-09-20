@@ -19,18 +19,20 @@
             @if (ShowNavMenu)
             {
                 <FluentNavMenu @bind-Expanded="@expandedMenu" Width="150" Collapsible="true">
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Item 1" Href="/dash" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Cloud())" Text="Item 2" Href="/mart" />
-                    <FluentNavMenuGroup Text="Item 3" Icon="@(new Icons.Regular.Size24.EarthLeaf())" Href="/mart">
-                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.LeafOne())" Text="Item 3.1" Href="/mart" />
-                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.LeafTwo())" Text="Item 3.2" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Dahboard" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Handshake())" Text="Promise" Href="/mart" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.ShoppingBag())" Text="Mart" Href="/mart" />
+                    <FluentNavMenuGroup Text="Srttings" Icon="@(new Icons.Regular.Size24.Settings())" Href="/mart">
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Person())" Text="Profile" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PhoneLaptop())" Text="App" Href="/mart" />
+                    </FluentNavMenuGroup>                     
+                    <FluentNavMenuGroup Text="YouCent" Icon="@(new Icons.Regular.Size24.MoneyOff())" Href="/mart">
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.DesignIdeas())" Text="Idea" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PeopleTeam())" Text="Team" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Rocket())" Text="Mission" Href="/mart" />
                     </FluentNavMenuGroup> 
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Item 1" Href="/dash" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Cloud())" Text="Item 2" Href="/mart" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Item 1" Href="/dash" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Cloud())" Text="Item 2" Href="/mart" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Item 1" Href="/dash" />
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Cloud())" Text="Item 2" Href="/mart" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PersonSupport())" Text="Support" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.People())" Text="Join!" Href="/mart" />
                 </FluentNavMenu>    
             }
             @if (ShowBodyContent)
