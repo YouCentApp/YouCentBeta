@@ -5,22 +5,25 @@
     min-height: 100vh;
 }
 
+.brand-box {
+    margin: auto;
+}
 
 .brand-logo {
-    margin-left: 10px;
     width: 36px;
-    height: 36px;
+    vertical-align: middle;
 }
 
 .brand-name {
-    font-weight: 700;
-    font-size: 36px;
-    margin-left: 10px;
-    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 5px;
 }
 
   
 .content {
-    margin: 8px;
+    margin: 5px;
 }
 
