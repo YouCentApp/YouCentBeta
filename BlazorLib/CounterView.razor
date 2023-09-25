@@ -2,7 +2,7 @@
 
 <p role="status">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="" @onclick="IncrementCount">Click me</button>
 
 @code {
     private int currentCount = 0;
@@ -10,5 +10,11 @@
     private void IncrementCount()
     {
         currentCount++;
+
+
+        if (currentCount > 10)
+        {
+            throw new InvalidOperationException("Current count is too big!");
+        }
     }
 }

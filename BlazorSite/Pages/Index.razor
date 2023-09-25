@@ -1,3 +1,11 @@
 ﻿@page "/"
-<PageTitle>Index</PageTitle>
-<HelloView></HelloView>
+@inject NavigationManager NavManager
+
+<h1>YouCent</h1>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("/dash");
+    }
+}

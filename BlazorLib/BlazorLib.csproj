@@ -1,21 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0-rc.1.23421.29" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Emojis" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons" Version="3.0.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PromiseLib\PromiseLib.csproj" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
+  </PropertyGroup>
+
 </Project>

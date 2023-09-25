@@ -1,13 +1,28 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-    </Found>
-    <NotFound>
-        <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
-        </LayoutView>
-    </NotFound>
-</Router>
+﻿<CascadingValue Value="this">
+    <FluentDesignSystemProvider @ref="MainDesign" NeutralBaseColor="#3AAA35" AccentBaseColor="#95C11F" BaseLayerLuminance="0.11f" Style="height:100%;">
+        <Router AppAssembly="@typeof(App).Assembly">
+            <Found Context="routeData">
+                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            </Found>
+            <NotFound>
+                <PageTitle>No page found</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)">
+                    <p class="error-404" role="alert">Sorry, looks like this page does not exist. Please try again.</p>
+                </LayoutView>
+            </NotFound>
+        </Router>
+    </FluentDesignSystemProvider>
+</CascadingValue>
 
+
+
+@code {
+
+    [Inject]
+    public BaseLayerLuminance BaseLayerLuminance { get; set; } = default!;
+
+    public FluentDesignSystemProvider? MainDesign;
+
+
+    
+}

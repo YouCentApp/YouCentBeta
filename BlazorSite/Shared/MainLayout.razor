@@ -1,18 +1,80 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+@namespace BlazorSite
+    
+ <div class="page">
+    <FluentLayout>
+        @if (ShowHeader)
+        {
+            <FluentHeader>
+                <div class="brand-box" @onclick="OnBrandClick">
+                    <img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" />
+                    <span class="brand-name" href="/dash">YouCent</span>
+                </div>
+            </FluentHeader>
+        }
+        <FluentStack Orientation="Orientation.Horizontal" Width="100%">
+            @if (ShowNavMenu)
+            {
+                <FluentNavMenu @bind-Expanded="@expandedMenu" Width="150" Collapsible="true">
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Dahboard" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Handshake())" Text="Promise" Href="/mart" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.ShoppingBag())" Text="Mart" Href="/mart" />
+                    <FluentNavMenuGroup Text="Settings" Icon="@(new Icons.Regular.Size24.Settings())" Href="/mart">
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Person())" Text="Profile" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PhoneLaptop())" Text="App" Href="/mart" />
+                    </FluentNavMenuGroup>                     
+                    <FluentNavMenuGroup Text="YouCent" Icon="@(new Icons.Regular.Size24.MoneyOff())" Href="/mart">
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.DesignIdeas())" Text="Idea" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PeopleTeam())" Text="Team" Href="/mart" />
+                        <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Rocket())" Text="Mission" Href="/mart" />
+                    </FluentNavMenuGroup> 
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PersonSupport())" Text="Support" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.People())" Text="Join!" Href="/mart" />
+                </FluentNavMenu>    
+            }
+            @if (ShowBodyContent)
+            {
+                <FluentBodyContent>
+                    <main>
+                        <article class="content">
+                            <ErrorBoundary>@Body</ErrorBoundary>
+                        </article>
+                    </main>
+                </FluentBodyContent>
+            }
+        </FluentStack>
+        @if (ShowFooter)
+        {
+            <FluentFooter Style="@("height: 40px; color: white; text-align: center;")">
+                placeholder for important messages, errors, ads, and anouncments etc...
+            </FluentFooter>
+        }
+    </FluentLayout>    
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+
 </div>
 
+
+    
+@code
+{
+
+    bool expandedMenu = false;
+
+    bool ShowHeader = true;
+    bool ShowNavMenu = true;
+    bool ShowBodyContent = true;
+    bool ShowFooter = true;
+
+    protected override void OnInitialized()
+    {
+
+    }
+    void OnBrandClick(MouseEventArgs e)
+    {
+        Navigation.NavigateTo("/dash");
+    }
+}
