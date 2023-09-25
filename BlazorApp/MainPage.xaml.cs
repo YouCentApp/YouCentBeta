@@ -24,7 +24,7 @@ public partial class MainPage
 
     private async void OnWebButtonClicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(WebTest));
+        await Shell.Current.GoToAsync(nameof(AppPage));
     }
 }
 
