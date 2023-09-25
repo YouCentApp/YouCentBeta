@@ -1,0 +1,67 @@
+﻿@page "/mart"
+<PageTitle>YouCent PromiseMart</PageTitle>
+
+
+<div>
+    <br><br>
+    <FluentButton Appearance="@Appearance.Accent" @onclick="TurnLightsOn">Turn Lights On</FluentButton>
+</div>
+
+<div>
+    <br><br>
+    <FluentButton Appearance="@Appearance.Accent" @onclick="DimLights">Dim Lights</FluentButton>
+</div>
+
+<br>
+<br>
+<FluentCard>
+    <br><br />
+    <p>Light Level = @(Math.Round(lightLevel, 3))</p>
+    <br><br>
+</FluentCard>
+<br>
+<br>
+
+<p>
+    <br><br>
+    <FluentButton Appearance="@Appearance.Accent" @onclick="TurnDark">DARK</FluentButton>
+    &nbsp;&nbsp;&nbsp;
+    <FluentButton Appearance="@Appearance.Accent" @onclick="TurnLight">LIGHT</FluentButton>
+</p>
+
+@code {
+
+    [CascadingParameter]
+    public Main? App { get; set; }
+
+    private float lightLevel;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var v = await App!.BaseLayerLuminance.GetValueFor(App.MainDesign!.Element);
+        lightLevel = v is null ? 0.001f : (float)v;
+    }
+
+    private void TurnLightsOn()
+    {
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel += 0.010f);
+        if (lightLevel > 1) lightLevel = 1;
+    }
+    private void DimLights()
+    {
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel -= 0.010f);
+        if (lightLevel < 0) lightLevel = 0;
+    }
+
+    private void TurnDark()
+    {
+        lightLevel = 0.110f;
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel);
+    }
+
+    private void TurnLight()
+    {
+        lightLevel = 0.980f;
+        App!.BaseLayerLuminance.SetValueFor(App.MainDesign!.Element, lightLevel);
+    }
+}

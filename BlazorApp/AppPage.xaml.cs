@@ -1,9 +1,11 @@
 ﻿namespace BlazorApp;
 
-public partial class WebTest : ContentPage
+public partial class AppPage : ContentPage
 {
-	public WebTest()
+	public AppPage()
 	{
 		InitializeComponent();
+
+
 	}
 }
