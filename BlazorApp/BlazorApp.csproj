@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-      <TargetFrameworks>net7.0-android;</TargetFrameworks>
+      <TargetFrameworks>net8.0-android;</TargetFrameworks>
       <!-- <TargetFrameworks>net7.0-ios;net7.0-maccatalyst;net7.0-android</TargetFrameworks> -->
       <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
       <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -63,7 +63,7 @@
       <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.0.1" />
       <PackageReference Include="Microsoft.Fast.Components.FluentUI.Emojis" Version="3.0.0" />
       <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons" Version="3.0.1" />
-      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.0-rc.1.9171" />
   </ItemGroup>
 
   <ItemGroup>
