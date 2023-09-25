@@ -13,7 +13,7 @@
             "request": "launch",
             "cwd": "${workspaceFolder}/BlazorSite",
             "browser": "edge",
-            "url": "https://localhost:7007"
+            "url": "https://localhost:7011"
         }
     ]
 }
