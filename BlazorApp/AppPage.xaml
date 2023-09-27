@@ -7,11 +7,13 @@
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              Shell.NavBarIsVisible="False">
     <ScrollView>
-        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" HeightRequest="500">
-            <BlazorWebView.RootComponents>
-                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
-            </BlazorWebView.RootComponents>
-        </BlazorWebView>
+        <VerticalStackLayout>
+            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+                <BlazorWebView.RootComponents>
+                    <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+                </BlazorWebView.RootComponents>
+            </BlazorWebView>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

@@ -26,8 +26,8 @@
     </ProjectReference>
   </ItemGroup>
 
-   <PropertyGroup>
+   <!-- <PropertyGroup>
     <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
-  </PropertyGroup>
+  </PropertyGroup> -->
   
 </Project>

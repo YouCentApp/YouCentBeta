@@ -11,7 +11,7 @@
             <FluentHeader>
                 <div class="brand-box" @onclick="OnBrandClick">
                     <img title="YouCent Logo" class="brand-logo" src="/img/logo-white-small.png" />
-                    <span class="brand-name" href="/dash">YouCent</span>
+                    <span class="brand-name">YouCent</span>
                 </div>
             </FluentHeader>
         }
@@ -19,7 +19,7 @@
             @if (ShowNavMenu)
             {
                 <FluentNavMenu @bind-Expanded="@expandedMenu" Width="150" Collapsible="true">
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Dahboard" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Home())" Text="Dahboard" Href="/" />
                     <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Handshake())" Text="Promise" Href="/mart" />
                     <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.ShoppingBag())" Text="Mart" Href="/mart" />
                     <FluentNavMenuGroup Text="Settings" Icon="@(new Icons.Regular.Size24.Settings())" Href="/mart">
@@ -31,7 +31,7 @@
                         <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PeopleTeam())" Text="Team" Href="/mart" />
                         <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.Rocket())" Text="Mission" Href="/mart" />
                     </FluentNavMenuGroup> 
-                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PersonSupport())" Text="Support" Href="/dash" />
+                    <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.PersonSupport())" Text="Support" Href="/" />
                     <FluentNavMenuLink Icon="@(new Icons.Regular.Size24.People())" Text="Join!" Href="/mart" />
                 </FluentNavMenu>    
             }

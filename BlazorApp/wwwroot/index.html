@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>YouCent App</title>
         <base href="/" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <link href="BlazorSite.styles.css" rel="stylesheet" />
+        <link href="BlazorApp.styles.css" rel="stylesheet" />
         <link href="_content/Microsoft.Fast.Components.FluentUI/css/reboot.css" rel="stylesheet" />
         <link href="css/app.css" rel="stylesheet" />
     </head>
 
     <body>
+
         <div id="app">
             <svg class="loading-progress">
                 <circle r="40%" cx="50%" cy="50%" />
@@ -25,8 +25,10 @@
             Sorry, the fatal error has occurred.
             <a href="" class="reload">Please reload the App!</a>
         </div>
-        <script src="_framework/blazor.webassembly.js"></script>
+
+        <script app-name="BlazorApp" src="./_content/Microsoft.Fast.Components.FluentUI/js/initializersLoader.webview.js"></script>
+        <script src="_framework/blazor.webview.js" autostart="false"></script>
+
     </body>
 
 </html>
-

@@ -39,11 +39,13 @@
                 HorizontalOptions="Center" />
 
 
+
+
             <Button
-                x:Name="WebButton"
-                Text="Go to Web Test!"
-                SemanticProperties.Hint="Moving to test Blazor Page"
-                Clicked="OnWebButtonClicked"
+                x:Name="WebFluentButton"
+                Text="Go to Web FluentUI Test!"
+                SemanticProperties.Hint="Moving to test Blazor FLUENTui Designed Page"
+                Clicked="OnWebFluentButtonClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

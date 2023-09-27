@@ -2,8 +2,6 @@
 using Microsoft.Fast.Components.FluentUI;
 using PromiseLib.Weather;
 using Microsoft.Fast.Components.FluentUI.Infrastructure;
-using System.Reflection.Metadata;
-using System.Runtime.Intrinsics.X86;
 
 namespace BlazorApp;
 
@@ -22,18 +20,15 @@ public static class MauiProgram
 		builder.Services.AddMauiBlazorWebView();
 
         builder.Services.AddFluentUIComponents(options =>
-        {
-            options.HostingModel = BlazorHostingModel.WebAssembly;
-        });
-
-        builder.Services.AddFluentUIComponents(options =>
-        {
+		{
             options.HostingModel = BlazorHostingModel.Hybrid;
         });
+
         builder.Services.AddSingleton<IStaticAssetService, FileBasedStaticAssetService>();
 
 #if DEBUG
-        builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Logging.AddDebug();
+		builder.Services.AddBlazorWebViewDeveloperTools();
 		
 #endif
 

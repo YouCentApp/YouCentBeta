@@ -7,9 +7,9 @@ namespace Microsoft.Fast.Components.FluentUI;
 
 public class FileBasedStaticAssetService : IStaticAssetService
 {
-    public async Task<string> GetAsync(string assetUrl, bool useCache = false)
+    public async Task<string?> GetAsync(string assetUrl, bool useCache = false)
     {
-        string result = null;
+        string? result = null;
         HttpRequestMessage message = CreateMessage(assetUrl);
         if (string.IsNullOrEmpty(result))
         {

@@ -21,8 +21,8 @@
     <ProjectReference Include="..\PromiseLib\PromiseLib.csproj" />
   </ItemGroup>
 
-  <PropertyGroup>
+  <!-- <PropertyGroup>
     <DefaultItemExcludes>$(DefaultItemExcludes);**/.*</DefaultItemExcludes>
-  </PropertyGroup>
+  </PropertyGroup> -->
 
 </Project>
