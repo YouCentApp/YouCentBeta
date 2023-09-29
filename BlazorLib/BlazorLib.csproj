@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
+
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI"  />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Emojis"  />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons"  />
   </ItemGroup>
 
   <ItemGroup>

@@ -72,6 +72,10 @@
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" />
+
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI"  />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Emojis"  />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons"  />
   </ItemGroup>
 
   <ItemGroup>
