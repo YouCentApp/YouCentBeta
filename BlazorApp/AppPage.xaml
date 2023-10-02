@@ -6,14 +6,12 @@
              xmlns:local="clr-namespace:BlazorApp"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              Shell.NavBarIsVisible="False">
-    <ScrollView>
-        <VerticalStackLayout>
-            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
-                <BlazorWebView.RootComponents>
-                    <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
-                </BlazorWebView.RootComponents>
-            </BlazorWebView>
-        </VerticalStackLayout>
-    </ScrollView>
+
+    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.RootComponents>
+            <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+        </BlazorWebView.RootComponents>
+    </BlazorWebView>
+
 
 </ContentPage>
