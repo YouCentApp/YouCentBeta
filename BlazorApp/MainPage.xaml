@@ -13,24 +13,24 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                Source="logo.png"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="YouCent"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Welcome to PromiseLand!"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
 
             <Button
-                Text="Go to Web FluentUI Test!"
-                Clicked="OnWebFluentButtonClicked"
+                Text="Enter..."
+                Clicked="EnterPromiseLandClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

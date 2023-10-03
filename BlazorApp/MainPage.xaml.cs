@@ -6,7 +6,7 @@ public partial class MainPage
     {
         InitializeComponent();
     }
-    private async void OnWebFluentButtonClicked(object sender, EventArgs e)
+    private async void EnterPromiseLandClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(AppPage));
     }
