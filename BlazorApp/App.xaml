@@ -6,18 +6,18 @@
     <Application.Resources>
         <ResourceDictionary>
 
-            <Color x:Key="PageBackgroundColor">Yellow</Color>
-            <Color x:Key="PrimaryTextColor">Blue</Color>
+            <Color x:Key="PageBackgroundColor">White</Color>
+            <Color x:Key="PrimaryTextColor">Green</Color>
 
 
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontFamily" Value="Nunito" />
             </Style>
 
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontFamily" Value="Nunito" />
                 <Setter Property="BackgroundColor" Value="LightGrey" />
                 <Setter Property="Padding" Value="14,10" />
             </Style>
