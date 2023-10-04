@@ -18,9 +18,9 @@
             </Style>
 
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="{DynamicResource AccentBackgroundColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource AccentTextColor}" />
                 <Setter Property="FontFamily" Value="Nunito" />
-                <Setter Property="BackgroundColor" Value="{DynamicResource AccentTextColor}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource AccentBackgroundColor}" />
                 <Setter Property="Padding" Value="20,15" />
             </Style>
 

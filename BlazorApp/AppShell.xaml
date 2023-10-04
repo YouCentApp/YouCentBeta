@@ -11,10 +11,7 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
-    <ShellContent
-        Title="YouCent App"
-        ContentTemplate="{DataTemplate local:AppPage}"
-        Route="AppPage" />        
+    
 
 </Shell>
 
