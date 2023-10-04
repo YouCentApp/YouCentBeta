@@ -8,30 +8,31 @@
 
      <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
+            Spacing="20"
+            Padding="20,0"
             VerticalOptions="Center">
 
             <Image
                 Source="logo.png"
-                HeightRequest="200"
+                HeightRequest="256"
                 HorizontalOptions="Center" />
 
             <Label
                 Text="YouCent"
-                FontSize="32"
+                FontSize="48"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to PromiseLand!"
-                FontSize="18"
+                Text="Welcome to the PromiseLand!"
+                FontSize="24"
                 HorizontalOptions="Center" />
 
 
             <Button
-                Text="Enter..."
+                Text="ENTER"
                 Clicked="EnterPromiseLandClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="18" />
 
         </VerticalStackLayout>
     </ScrollView>

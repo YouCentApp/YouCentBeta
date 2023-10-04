@@ -7,7 +7,9 @@
         <ResourceDictionary>
 
             <Color x:Key="PageBackgroundColor">White</Color>
-            <Color x:Key="PrimaryTextColor">Green</Color>
+            <Color x:Key="AccentBackgroundColor">#D3D800</Color>
+            <Color x:Key="PrimaryTextColor">#3AAA35</Color>
+            <Color x:Key="AccentTextColor">Black</Color>
 
 
             <Style TargetType="Label">
@@ -16,10 +18,10 @@
             </Style>
 
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource AccentBackgroundColor}" />
                 <Setter Property="FontFamily" Value="Nunito" />
-                <Setter Property="BackgroundColor" Value="LightGrey" />
-                <Setter Property="Padding" Value="14,10" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource AccentTextColor}" />
+                <Setter Property="Padding" Value="20,15" />
             </Style>
 
         </ResourceDictionary>
