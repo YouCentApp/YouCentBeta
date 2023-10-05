@@ -7,7 +7,7 @@ body {
     --body-font:
     'YouCentNunito', Helvetica, Arial, sans-serif;
     font-family: var(--body-font);
-    background-color: #3a3a3a;
+    background-color: #ffffff;
     max-width: 850px;
     min-width: 320px;
     margin: auto;
@@ -52,3 +52,8 @@ body {
 
 
 
+.loading {
+    text-align: center;
+    color: #3AAA35;
+    margin-top: 2rem;
+}
